@@ -9,6 +9,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script defer src="scripts.js"></script>
+<script defer src="controlmulti.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" href="main.css">
 <body>
@@ -17,5 +18,37 @@
     <button onclick="saveFile()">Submit</button>
     <p id='error' style="color: red;"></p>
     <a href="index.html">I'm feeling okay now</a>
+
+
+    <!-- MUSIC PLAYER -->
+
+    <ul>
+        <li class="title"><strong>  SELECT A TRACK </strong></li>
+        <ul id="list">
+            <li><a href="#" data-value="media/song4.mp3"> 👑 </a></li>
+            <li><a href="#" data-value="media/song5.mp3"> ❤ </a></li>
+            <li><a href="#" data-value="media/song6.mp3"> 🌇 </a></li>
+        </ul>
+    </ul>
+
+    <!-- Load audio in background -->
+    <audio id="audio_player">
+        <source src="media/song3.mp3" type="audio/mpeg" id="audioSource">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="container">
+
+        <!-- Audio Player -->
+        <div id="audioplayer" style="border: 1px solid black;">
+            <button id="pButton" class="play" onclick="playAudio()"></button>
+
+            <div id="volume_control">
+                <label id="rngVolume_label" for="rngVolume" onclick="setVolumeNone()"></label>
+                <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+
+    </div> <!-- End of container stage -->
 </body>
 </html>
