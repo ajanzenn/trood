@@ -23,11 +23,11 @@ function playAudio() {
     if (music.paused) {
         music.play();
         playButton.className = "";
-        playButton.className = "pause";
+        playButton.className = "pause button-color";
     } else {
         music.pause();
         playButton.className = "";
-        playButton.className = "play";
+        playButton.className = "play button-color";
     }
 }
 

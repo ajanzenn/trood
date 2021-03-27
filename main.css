@@ -56,6 +56,11 @@ p, h3 {
     width:100%;
 }
 
+.main-buts:hover {
+    text-decoration: none !important;
+    color: #272929;
+}
+
 #part-3{
     background-image: url(images/urban-205.png);
     background-size: cover;
@@ -104,10 +109,6 @@ p, h3 {
     border-bottom-right-radius:50px;
 
 
-}
-
-.play{
-    margin-right: 20px;
 }
 
 #volume_control {
