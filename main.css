@@ -21,3 +21,33 @@ html, body {margin: 0; height: 100%;}
     min-height: 100px;
     width: 200px;
 }
+
+.mediabar {
+    padding: 20px 0;
+    margin: 20px;
+}
+
+.media-button {
+    width: 75px;
+    margin: 0 20px;
+}
+
+#audioplayer{
+    display: flex;
+}
+
+.play{
+    margin-right: 20px;
+}
+
+#volume_control {
+    margin: 0 auto;
+    padding-top: 12px;
+}
+
+.paint{
+    text-align: center;
+    border-style: none;
+    width: 100%;
+    height: 80%;
+}
