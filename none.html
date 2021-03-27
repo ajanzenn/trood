@@ -10,47 +10,48 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script defer src="scripts.js"></script>
 <script defer src="controlmulti.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" href="main.css">
 <body>
-    <h2>Journal</h2>
-    <textarea name="" id="journalInput" cols="30" rows="10"></textarea><br>
-    <button onclick="saveFile()">Download</button>
-    <p id='error' style="color: red;"></p>
-    
-
-
     <!-- MUSIC PLAYER -->
 
-    <ul>
-        <li class="title"><strong>  SELECT A TRACK </strong></li>
-        <ul id="list">
-            <li><a href="#" data-value="media/song4.mp3"> 👑 </a></li>
-            <li><a href="#" data-value="media/song5.mp3"> ❤ </a></li>
-            <li><a href="#" data-value="media/song6.mp3"> 🌇 </a></li>
-        </ul>
-    </ul>
-
-    <!-- Load audio in background -->
     <audio id="audio_player">
-        <source src="media/song3.mp3" type="audio/mpeg" id="audioSource">
+        <source src="media2/song1.mp3" type="audio/mpeg" id="audioSource">
         Your browser does not support the audio element.
     </audio>
+    <div class="container d-flex justify-content-between w-100 mediabar">
+        
+        
+            <div class="row">
+                <h2 class="title">Select Music:</h2>
+                <a class="btn btn-info rounded media-button" role="button" href="#" data-value="media2/song1.mp3"> 1 </a>
+                <a class="btn btn-info rounded media-button" role="button" href="#" data-value="media2/song2.mp3"> 2 </a>
+                <a class="btn btn-info rounded media-button" role="button" href="#" data-value="media2/song3.mp3"> 3 </a>    
 
-    <div id="container">
-
-        <!-- Audio Player -->
-        <div id="audioplayer" style="border: 1px solid black;">
-            <button id="pButton" class="play" onclick="playAudio()"></button>
-
-            <div id="volume_control">
-                <label id="rngVolume_label" for="rngVolume" onclick="setVolumeNone()"></label>
-                <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1">
             </div>
+            <!-- Audio Player -->
+            
+                <div id="audioplayer">
+                    <button id="playButton" class="btn btn-primary play" type='button' onclick="playAudio()"><i class="fas fa-play"><i class="fas fa-pause"></i></i></button>
+                    <div class="form-group" id="volume_control">
+                        <label class="form-label" id="rngVolume_label" for="rngVolume" onclick="setVolumeNone()"></label>
+                        <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1">
+                    </div>
+                </div>
+            
+            
         </div>
+    </div>
+    <div class="container form-group">
+        <h1>Journal</h2>
+        <textarea class="form-control rounded-0" id="journalInput" rows="30"></textarea><br>
+        <button class="btn btn-primary" onclick="saveFile()">Download</button>
+        <p id='error' style="color: red;"></p>
+    </div>
 
-    </div> <!-- End of container stage -->
-
-    <a class="btn btn-info rounded-pill" role="button" href="index.html#part-3">I'm feeling okay now</a>
+    <div class="d-flex justify-content-center">
+        <a class="btn btn-info rounded-pill " role="button" href="index.html">I feel calm now</a>
+    </div>
 </body>
 </html>
