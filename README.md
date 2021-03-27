@@ -10,7 +10,7 @@ https://ajanzenn.github.io <br />
 
 
 ## Tools Used
-**Web Application**: HTML, CSS, JS <br />
+**Web Application**: HTML, CSS, JS, BOOTSTRAP, jQUERY <br />
 **Wireframe, Mockup, & Prototype**: Figma <br />
 **Ideation**: Notion <br />
 
