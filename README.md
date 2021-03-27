@@ -18,3 +18,6 @@ It is a web app that starts by a user choosing how they are feeling and takes th
 ## Links
 **Figma**:  https://www.figma.com/file/p432FVFNHryKJSKgoraBzH/trood?node-id=4%3A358  <br />
 **Notion**:  https://www.notion.so/trood-mood-lifting-app-hackor-05c4873203cb4124a14e16b33b1b8a4f <br />
+
+
+## Bugs
