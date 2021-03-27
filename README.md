@@ -20,6 +20,7 @@ It is a web app that starts by a user choosing how they are feeling and takes th
 **Notion**:  https://www.notion.so/trood-mood-lifting-app-hackor-05c4873203cb4124a14e16b33b1b8a4f <br />
 
 ## External Content
+**jspaint**: https://github.com/1j01/jspaint
 
 
 ## Bugs
