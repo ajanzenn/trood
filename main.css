@@ -50,6 +50,17 @@ p, h3 {
     height: 100%;
 }
 
+#part-2{
+    background-image: url(images/urban-681.png);
+    background-size: cover;
+    width:100%;
+}
+
+#part-3{
+    background-image: url(images/urban-205.png);
+    background-size: cover;
+}
+
 .Absolute-Center {
   display: flex; 
   align-items: center;
