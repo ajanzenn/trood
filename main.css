@@ -1,0 +1,23 @@
+html, body {margin: 0; height: 100%;}
+
+.logo {
+    width: 40%;
+}
+
+#landing, #part-2, #part-3 {
+    height: 100%;
+}
+
+.Absolute-Center {
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+}  
+
+.btn-lg{
+    margin: 80px;
+    text-align: center;
+    min-height: 100px;
+    width: 200px;
+}
