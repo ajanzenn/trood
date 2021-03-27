@@ -24,3 +24,7 @@ function saveFile() {
 function destroyClickedElement(e){
     document.body.remove(e.target);
 } 
+
+$('.carousel').carousel({
+    interval: false
+  })
