@@ -21,6 +21,27 @@ html, body {
     background: linear-gradient(0deg, rgba(76,161,175,1) 0%, rgba(196,224,229,1) 100%);
 }
 
+.button-color {
+    background-color: #92a4a4;
+    color: #474a4a;
+    border:solid 4px #3f3f3f;
+    border-top-left-radius:50px;
+    border-top-right-radius:50px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+}
+
+h2{
+    color: #62696a; }
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
 .logo {
     width: 40%;
 }
@@ -41,6 +62,11 @@ html, body {
     text-align: center;
     min-height: 100px;
     width: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    font-family: 'Poppins', sans-serif;
 }
 
 .mediabar {
@@ -49,12 +75,24 @@ html, body {
 }
 
 .media-button {
-    width: 75px;
+    width: 120px;
     margin: 0 20px;
+    font-size: 20pt;
+    font-weight: 600;
 }
 
 #audioplayer{
     display: flex;
+    padding-right: 20px;
+    margin-right: 40px;
+    background-color: #716e6e;
+    border:solid 6px #3f3f3f;
+    border-top-left-radius:50px;
+    border-top-right-radius:50px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+
+
 }
 
 .play{
