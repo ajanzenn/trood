@@ -23,3 +23,4 @@ let d = new Date();
     function destroyClickedElement(e){
         document.body.remove(e.target);
     } 
+    

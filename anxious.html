@@ -10,16 +10,14 @@
 <script defer src="scripts.js"></script>
 <link rel="stylesheet" href="main.css">
 <body>
-    <img src="images/logo.png" alt="trood logo">
-    <p>A mood lifting app that helps calm you when you're feeling down</p>
-    
-    <h2>How are you feeling today?</h2>
-    <a href="stressed.html">Stressed</a>
-    <a href="anxious.html">Anxious</a>
-    <a href="sad.html">Sad</a>
-    <a href="happy.html">Happy</a>
-    <a href="angry.html">Angry</a>
-    <a href="none.html">None of these</a>    
+    <div>
+        <script src="https://cdn.htmlgames.com/embed.js?game=ColoringForKids&amp;bgcolor=white"></script>
+    </div>
+    <h2>Journal</h2>
+    <textarea name="" id="journalInput" cols="30" rows="10"></textarea><br>
+    <button onclick="saveFile()">Submit</button>
+    <p id='error' style="color: red;"></p>
+    <a href="index.html">I'm feeling okay now</a>
 
 </body>
 </html>
