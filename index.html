@@ -6,9 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trood</title>
 </head>
-<script src="scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script defer src="scripts.js"></script>
 <link rel="stylesheet" href="main.css">
 <body>
     <h1>Trood</h1>
+    
+
+    <h2>How are you feeling today?</h2>
+    <button value="1">Stressed</button>
+    <button value="2">Anxious</button>
+    <button value="3">Sad</button>
+    <button value="4">Happy</button>
+    <button value="5">Angry</button>
+    <button value="6">None of these</button><br>
+    
+    <iframe src="https://jspaint.app/" name="iFrame Name" scrolling="No" height="500px" width="50%" style="border: none;"></iframe>
+
+
+
+
+
+    <h2>Journal</h2>
+    <textarea name="" id="journalInput" cols="30" rows="10"></textarea><br>
+    <button onclick="saveFile()">Submit</button>
+    <p id='error' style="color: red;"></p>
 </body>
 </html>
